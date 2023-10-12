@@ -57,13 +57,16 @@
 
 
 .op_in {
-    display: flex;
-    flex-direction: row;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   
 }
 
 .op_in div {
-    display: inline-block;
-    margin-right: 50px;
+    /* display: inline-block; */
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .DD {
