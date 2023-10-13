@@ -1,0 +1,124 @@
+        /* 전체 */
+        body {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .wrapper {}
+
+        /* Header >  top-header */
+        .wrapper>header {}
+
+        .wrapper>header>.top-header {
+            font-size: 0.8rem;
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 2px;
+        }
+
+        .wrapper>header>.top-header>ul {
+            list-style: none;
+            padding: 10px;
+            height: 15px;
+            line-height: 15px;
+            display: flex;
+            justify-content: right;
+
+
+        }
+
+        .wrapper>header>.top-header>ul>li {
+            width: 100px;
+            text-align: right;
+            position: relative;
+        }
+
+        .wrapper>header>.top-header>ul>li::after {
+            content: '|';
+            position: relative;
+
+            top: 0px;
+            bottom: 0px;
+            left: 20px;
+            right: 0px;
+
+        }
+
+        .wrapper>header>.top-header>ul>li:last-child::after {
+            display: none;
+
+        }
+
+        .wrapper>header>.top-header>ul>li>a {}
+
+        /* Header >  nav */
+        .wrapper>header>nav {
+            height: 100px;
+            /* border : 1px solid grey; */
+            display: flex;
+            padding: 10px;
+        }
+
+        .wrapper>header>nav>* {
+            margin: 2px;
+        }
+
+
+
+        .wrapper>header>nav>.left img {}
+
+        .wrapper>header>nav>.center {
+            border: 1px solid gray;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper>header>nav>.center>.search {
+            position: relative;
+
+        }
+
+        .wrapper>header>nav>.center input {
+            width: 400px;
+            height: 50px;
+            padding: 5px;
+            font-size: 1.5rem;
+        }
+
+        .wrapper>header>nav>.center input::placeholder {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3rem;
+        }
+
+        .wrapper>header>nav>.center>.search .search-icon {
+            position: absolute;
+            top: 0px;
+            left: 350px;
+            bottom: 0px;
+            right: 0px;
+
+        }
+
+        .wrapper>header>nav>.right {
+            border: 1px solid gray;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .wrapper>header>nav>.right>.login-icon::after {
+            content: "로그인";
+            display: block;
+            font-size: 0.8rem;
+            text-align: center;
+            color: black;
+
+        }

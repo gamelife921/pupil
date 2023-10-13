@@ -1,5 +1,13 @@
 /* ******************************** 옵션 *********************************** */
 /* body 스타일 */
+.bodyShop{
+    border: 1px solid black;
+    display: flex;
+    padding : 10px;
+
+    text-align: center;
+}
+
 .body_up {
     display: flex;
     justify-content: center;
@@ -9,6 +17,8 @@
 
 .option {
     border: 1px solid black;
+    background-color: white;
+
     width: 1500px;
     height: 300px auto;
     margin: 30px;
@@ -82,12 +92,10 @@
     background-color: white;
 
     border: 1px solid black;
-    width: 300px;
+    width: 500px;
     height: 1000px;
     margin-left: 50px;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: auto;
+
 }
 
 .basket::-webkit-scrollbar {
@@ -108,13 +116,28 @@
 }
 
 
-
+/* /////////////////////////////////////////////////////////////// */
 .menu {
+    border: 1px solid black;
     background-color: white;
+    width: 1300px;
+    text-align: center;
+    
+}
+.menu>.in{
     width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+}
+.menu>.in>.box{
+    width: 40%;
+    height: 100px;
+    border: 1px solid black;
 }
 
-
+.menu .pagenation {
+    display: inline-block; /* nav 요소를 inline-block으로 설정 */
+}
 
 /* ---------- CPU --------------------------------------------- */
 .basket>.op_btn>.cpu {
