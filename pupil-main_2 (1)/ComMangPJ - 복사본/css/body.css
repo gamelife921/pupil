@@ -138,7 +138,7 @@
 }
 /* ******************************** 상품 *********************************** */
 .bodyShop{
-    
+   
 }
 .menu {
     display: flex;
@@ -155,16 +155,10 @@
 
     
 }
-.menu>.shop>.shop_box{
-    margin: 10px;
-    
-
-}
 .menu>.shop>.shop_box>table{
-    border-collapse: separate;
-    border-spacing: 0 10px;
+    border-collapse: separate; /* 테이블 셀 경계선을 개별로 관리 */
+    border-spacing: 0 10px; /* 수평은 0, 수직은 10px의 간격 설정 */
 }
-
 .menu>.shop>.shop_box>table>thead>tr>.shop_box_left{
     border: 1px solid;
     width: 100px;
@@ -178,7 +172,6 @@
     border: 1px solid;
     width: 350px;
 }
-
 /* ---------- CPU --------------------------------------------- */
 .basket>.op_btn>.cpu {
     border: 1px solid black;

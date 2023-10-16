@@ -1,0 +1,189 @@
+/* body 스타일 */
+
+.option {
+    border: 1px solid black;
+    width: 600px;
+    height: 900px;
+    margin-right: 80px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.option::-webkit-scrollbar {
+    width: 1px;
+    background-color: black;
+  }
+
+.option>.op_btn>input {
+    text-align: center;
+
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    margin-left: 25px;
+
+    cursor: pointer;
+
+}
+
+
+/* 옵션 콤보 박스 */
+.ComboBox01 {
+    
+    border: 1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    right: 500px;
+}
+
+.ComboBox01>label {
+    margin: 10px;
+   
+}
+
+/*  체크박스 */
+.option>.op_btn>.cpu>.jejosa {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.NextEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.NextEnd>.EndBtn {
+    margin: 10px;
+}
+
+.NextEnd>.NextBtn {
+    margin: 10px;
+}
+
+
+/* 가격 */
+.TestName>label {
+    display: flex;
+    margin: 5px;
+}
+
+.menu {
+    border: 1px solid red;
+    width: 800px;
+    height: 1000px;
+}
+
+.TestName {
+    margin: 10px;
+    border: 1px solid black;
+    background-color: azure;
+
+}
+
+.money {
+    margin: 5px;
+}
+
+/* ---------- CPU --------------------------------------------- */
+.option>.op_btn>.cpu {
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    margin-left: 25px;
+
+
+    display: none;
+}
+
+.CPU_tion {
+    background-color: #fff7b3;
+}
+
+/* ********************************* board ********************************** */
+.option>.op_btn>.board {
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    margin-left: 25px;
+
+    display: none;
+}
+
+.board_tion {
+    background-color: #fff7b3;
+}
+
+/* ********************************* ram ********************************** */
+.option>.op_btn>.ram {
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    margin-left: 25px;
+
+    display: none;
+}
+
+.ram_tion {
+    background-color: #fff7b3;
+}
+
+/* ********************************* GrapCard ********************************** */
+.option>.op_btn>.GrapCard {
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    margin-left: 25px;
+
+    display: none;
+}
+
+.GrapCard_tion {
+    background-color: #fff7b3;
+}
+
+/* ********************************* keiseu ********************************** */
+.option>.op_btn>.keiseu {
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    margin-left: 25px;
+
+    display: none;
+}
+
+.keiseu_tion {
+    background-color: #fff7b3;
+}
+
+/* ********************************* Power ********************************** */
+.option>.op_btn>.Power {
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    margin-left: 25px;
+
+    display: none;
+}
+
+.Power_tion {
+    background-color: #fff7b3;
+}
+
+/* ******************************************************************* */
+.basket {
+    background-color: white;
+
+    border: 1px solid black;
+    width: 300px;
+    height: 1000px;
+    margin-left: 50px;
+}
+
+.menu {
+    background-color: white;
+    width: 1000px;
+}

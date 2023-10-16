@@ -1,0 +1,5 @@
+빈 브라우저 창
+
+옵션 선택창 눌러서 열떄 그박스 안만 내려가게끔 설정
+
+https://blog.naver.com/PostView.naver?blogId=design4u74&logNo=221125001270
