@@ -57,12 +57,13 @@
     text-align: center;
     position: absolute;
     margin: 10px;
-    left: 20%;
+    left: 15%;
     z-index: 1;
     top: 40px;
-    display: none;
+    /* display: none; */
     border: 1px solid;
-    width: 1000px;
+    width: 1200px;
+    height: 300px;
 }
 
 
@@ -72,7 +73,28 @@
    justify-content: center;
    
 }
+.option_Shop>ul>li>.op_box>.op_out>.op_in>div>.op{
+    margin-top: 10px;
+    border: 1px solid;
+    width: 200px ;
+    height: 250px;
 
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.op::-webkit-scrollbar {
+    width: 0px;
+  }
+.option_Shop>ul>li>.op_box>.op_out>.op_in>div>.op>ul{
+    list-style-type: none;
+    padding: 0;
+}
+.option_Shop>ul>li>.op_box>.op_out>.op_in>div>.op>ul>li{
+    margin-top: 10px;
+    width: 200px;
+}
 .op_in div {
     /* display: inline-block; */
     margin-right: 5%;
@@ -114,29 +136,47 @@
     cursor: pointer;
 
 }
-
-
-/* /////////////////////////////////////////////////////////////// */
-.menu {
-    border: 1px solid black;
-    background-color: white;
-    width: 1300px;
-    text-align: center;
+/* ******************************** 상품 *********************************** */
+.bodyShop{
     
 }
-.menu>.in{
-    width: 1000px;
-    height: 700px;
-    border: 1px solid black;
+.menu {
+    display: flex;
+    text-align: center; /* 내부 텍스트 가운데 정렬 */
+    background-color: white;
+    width: 1300px;
+    border: 1px solid;
 }
-.menu>.in>.box{
-    width: 40%;
-    height: 100px;
-    border: 1px solid black;
+.menu>.shop{
+    margin: 0 auto;
+    border: 1px solid;
+    width : 90%;
+    height: 95%;
+
+    
+}
+.menu>.shop>.shop_box{
+    margin: 10px;
+    
+
+}
+.menu>.shop>.shop_box>table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
 }
 
-.menu .pagenation {
-    display: inline-block; /* nav 요소를 inline-block으로 설정 */
+.menu>.shop>.shop_box>table>thead>tr>.shop_box_left{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+}
+.menu>.shop>.shop_box>table>thead>tr>.shop_box_center{
+    border: 1px solid;
+    width: 700px;
+}
+.menu>.shop>.shop_box>table>thead>tr>.shop_box_right{
+    border: 1px solid;
+    width: 350px;
 }
 
 /* ---------- CPU --------------------------------------------- */
@@ -145,8 +185,7 @@
     background-color: white;
     width: 90%;
     margin-left: 25px;
-
-
+    
     display: none;
 }
 
