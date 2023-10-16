@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<style>
+	body {
+  height: 100vh; /* 화면 높이 기준으로 중앙 정렬을 위해 body 높이를 설정 */
+  margin: 0; /* body의 기본 여백 제거 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .btn {
+          background-color: skyblue;
+            color: white; 
+            flex: 1;
+            margin: 5px; 
+            width:100px;
+        }
+		
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class ="jumbotron" style="padding-top:20px;">
+                <form method = "post" action="${pageContext.request.contextPath}Login.do">
+                
+                	<!-- 제목 -->
+                    <h3 style="text-align:center;">로그인 화면</h3>
+                    
+                    <!-- 로그인 회원가입 작성 -->
+                    <div class ="form-group">
+                        <input type ="text" class="form-control" placeholder="아이디" name ="userid" maxlength='20'>
+                    </div>
+                    <div class ="form-group">
+                        <input type ="password" class="form-control" placeholder="비밀번호" name ="pw" maxlength='20'>
+                    </div>
+                    
+                    <!-- 로그인 회원가입 버튼  -->
+                    <input type="submit" class="btn" value="로그인">
+                    <input type="submit" class="btn" formaction="register.do" value="회원가입">
+                </form>
+            </div> 
+        </div> 
+        <div class="col-lg-4"></div>
+    </div>
+</body>
+</html>
