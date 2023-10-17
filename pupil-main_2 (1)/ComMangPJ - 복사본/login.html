@@ -29,12 +29,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(205, 238, 255);
-            padding-left: 170px;
-            padding-right: 170px;
+            background-color: whitesmoke;
+
             
         }
-
+        .container{
+            height: 955px;
+            background-color: rgb(205, 238, 255);
+        }
         .button-container {
             display: flex;
             justify-content: space-between;
@@ -42,6 +44,23 @@
         .jumbotron{
             border: 1px solid;
             background-color: white;
+        }
+        .jumbotron>div>div>a{
+            font-size: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .jumbotron>div>div>a::after {
+            content: '|';
+            position: relative;
+
+            top: 0px;
+            bottom: 0px;
+            left: 10px;
+            right: 0px;
+        }
+        .jumbotron>div>div>.member:last-child::after {
+            display: none;
         }
         .btn {
             background-color: skyblue;
@@ -53,32 +72,32 @@
         .login_GKN{
             text-align: center;
         }
+        .login_GKN>div{
+            width: 50px; height: 50px;
+            font-size: 35px;
+            
+        }
         .login_GKN>.kakao{
-            width: 35px; height: 35px;
             margin-left: 20px;
             margin-right: 20px;
-
-            background-color: yellow;
             border: 1px solid;
             border-radius: 50%;
+            background-color: yellow;
         }
         .login_GKN>.google{
-            width: 35px; height: 35px;
             margin-right: 20px;
-
-            background-color: aliceblue;
             border: 1px solid;
             border-radius: 50%;
+            background-color: aliceblue;
         }
         .login_GKN>.naver{
-            width: 35px; height: 35px;
             margin-left: 20px;
-
-            background-color: greenyellow;
             border: 1px solid;
             border-radius: 50%;
+            background-color: greenyellow;
         }
         .login_GKN>.logcat{
+            margin-top: 100px;
             margin-left: 50px;
             width: 270px; height: 200px;
             background-image: url("img/logcat.jpg");
@@ -113,9 +132,13 @@
                     </div>
 
                     <!-- 로그인 회원가입 버튼  -->
-                    <input type="submit" class="btn" value="로그인">
-                    <input type="submit" class="btn" formaction="register.do" value="회원가입">
+                    <input type="submit" class="btn" value="로그인" style="width: 220px;">
                 </form>
+                <div style="display: flex;">
+                    <div><a href="">아이디 찾기</a></div>
+                    <div><a href="">비밀번호 찾기</a></div>
+                    <div><a href="" class="member">회원가입</a></div>
+                </div>
             </div>
             <div class="login_GKN">
                 <div class="material-symbols-outlined google">G</div>
