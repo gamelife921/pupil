@@ -23,7 +23,7 @@ header {}
 header>.header-top {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid red;
     height: 37px;
 }
 
@@ -42,6 +42,20 @@ header>.header-top>.header-left>ul>li {
     text-align: left;
     position: relative;
 }
+header>.header-top>.header-left>ul>li::after {
+    content: '|';
+    position: relative;
+    font-size: 15px;
+    top: 0px;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
+}
+
+header>.header-top>.header-left>ul>li:last-child::after {
+    display: none;
+
+}
 
 header>.header-top>.header-right {
     /* border: 1px solid; */
@@ -55,10 +69,8 @@ header>.header-top>.header-right>ul {
 header>.header-top>.header-right>ul>li {
     width: 75px;
     text-align: right;
-    position: relative;
 }
-
-header>.header-top>.header-top-in>ul>li ::after {
+header>.header-top>.header-right>ul>li::after {
     content: '|';
     position: relative;
     font-size: 15px;
@@ -68,9 +80,18 @@ header>.header-top>.header-top-in>ul>li ::after {
     right: 0px;
 }
 
-header>.header-top>.header-top-in>ul>li:last-child:after {
+header>.header-top>.header-right>ul>li:last-child::after {
     display: none;
 
+}
+header>.header-top>.header-left>ul>.header-home::after {
+    content: '|';
+    position: absolute;
+    font-size: 15px;
+    top: 0px;
+    bottom: 10px;
+    left: 35px;
+    right: 0px;
 }
 
 /* **************************************** nav ********************************************* */
@@ -84,19 +105,17 @@ nav {
 nav>* {
     margin: 2px;
 }
-
+.nav-top{
+    border-top: 1px solid red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .nav-top>.nav-left {
-    border: 1px solid gray;
-    width: 500px;
-    /* background-image:url("img/logcat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-
+    /* border: 1px solid gray; */
 }
 
 .nav-top>.nav-center {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -136,7 +155,8 @@ nav>* {
 }
 
 .nav-top>.nav-right {
-    border: 1px solid gray;
+    border: 1px double red;
+    border-radius: 10px;
     width: 400px;
     display: flex;
     justify-content: center;
@@ -227,6 +247,7 @@ section>.main-top {
     border: 1px solid;
     width: 850px;
     margin: 5px;
+    margin-left: 10px;
 }
 
 section>.main-top>p {}
@@ -258,10 +279,15 @@ section>.main-top>.option-top>.option>.option-box>.op {
     margin-right: 30px;
 }
 
+section>.main-top>.option-top>.option>.option-box>.op>ul{}
+section>.main-top>.option-top>.option>.option-box>.op>ul>li{
+    margin: 5px;
+}
 /* /////main-bottom//////////// */
 section>.main-bottom {
     border: 1px solid;
     margin: 5px;
+    margin-left: 10px;
 
 }
 
@@ -315,5 +341,6 @@ aside>div {
     border: 1px solid;
     width: 400px;
     height: 1000px;
-    margin: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
