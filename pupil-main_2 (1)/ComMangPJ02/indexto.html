@@ -5,81 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- 스타일 mind -->
+    <link rel="stylesheet" href="css/main.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         .material-symbols-outlined {
             font-variation-settings:
                 'FILL' 0,
-                'wght' 400,
+                'wght' 350,
                 'GRAD' 0,
                 'opsz' 24
         }
     </style>
-    <style>
-        * {}
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        a{
-            color: inherit;
-            text-decoration: none;
-        }
-        ul{
-            margin: 0;
-            padding: 0;
-        }
-        header {}
-
-        header>.header-top {
-            display: flex;
-            justify-content: space-between;
-            border: 1px solid gray;
-            height: 37px;
-        }
-
-        header>.header-top>.header-left {
-            border: 1px solid;
-            width: 300px;
-        }
-        header>.header-top>.header-left>ul {
-            display: flex;
-            list-style-type: none;
-        }
-        header>.header-top>.header-left>ul>li{
-            width: 100px;
-            text-align: left;
-            position: relative;
-        }
-        header>.header-top>.header-right {
-            border: 1px solid;
-            width: 500px;
-        }
-        header>.header-top>.header-right>ul{
-            display: flex;
-            list-style-type: none;
-        }
-        header>.header-top>.header-right>ul>li{
-            width: 75px;
-            text-align: right;
-            position: relative;
-        }
-        header>.header-top>.header-top-in>ul>li ::after{
-            content: '|';
-            position: relative;
-
-            top: 0px;
-            bottom: 0px;
-            left: 10px;
-            right: 0px;
-        }
-        header>.header-top>.header-top-in>ul>li:last-child:after{
-            display: none;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -88,7 +29,7 @@
             <div class="header-top">
                 <div class="header-left header-top-in">
                     <ul>
-                        <li style="width: 50px;"><a href="" class="material-symbols-outlined" >home</a></li>
+                        <li style="width: 50px;"><a href="" class="material-symbols-outlined " style="font-size: 25px;">home</a></li>
                         <li><a href="">PC구매상담</a></li>
                         <li><a href="">로그인</a></li>
                     </ul>
@@ -98,19 +39,159 @@
                         <li><a href="">다나와</a></li>
                         <li><a href="">에누리</a></li>
                         <li><a href="">몰테일</a></li>
-                        <li style="width: 120px;"><a href="">플레이오토</a></li>
-                        <li><a href="">메이크샵</a></li>
+                        <li style="width: 100px;"><a href="">플레이오토</a></li>
+                        <li style="width: 85px;"><a href="">메이크샵</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-        <nav></nav>
-        <section>
-            <article></article>
-        </section>
-        <aside>
+        <nav class="nav-top">
+            <div class="nav-left">아이콘</div>
+            <div class="nav-center">
+                <div class="search">
+                    <input type="text" class="form-control" placeholder="검색어를 입력하세요">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="material-symbols-outlined cart-icon">shopping_cart</div>
+                <div class="material-symbols-outlined heart-icon">heart_plus</div>
+                <div class="material-symbols-outlined login-icon">person</div>
+            </div>
+        </nav>
+        <nav class="nav-bottom">
+            <div class="nav-left">
+                <ul>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                    <li>게임 사진</li>
+                </ul>
 
-        </aside>
+            </div>
+            <div class="nav-right">
+                그림
+            </div>
+        </nav>
+        <div class="main">
+            <section>
+                <article class="main-top">
+                    <div class="option-top">
+                        <p>옵션선택</p>
+                        <div class="option">
+                            <div class="option-name">
+                                <p>CPU</p>
+                                <p>메인보드</p>
+                                <p>메모리</p>
+                                <p>그레픽카드</p>
+                                <p>SSD</p>
+                                <p>HDD</p>
+                                <p>케이스</p>
+                                <p>파워</p>
+                            </div>
+                            <div class="option-box">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>CPU 종류</p>
+                                    <ul>
+                                        <li>코어i9</li>
+                                        <li>코어i7</li>
+                                        <li>코어i5</li>
+                                        <li>코어i3</li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>세대</p>
+                                    <ul>
+                                        <li>13세대</li>
+                                        <li>12세대</li>
+                                        <li>11세대</li>
+                                        <li>10세대</li>
+                                        <li>9세대</li>
+                                        <li>8세대</li>
+                                        <li>7세대</li>
+                                        <li>6세대</li>
+                                        <!--  -->
+                                        <li>5세대</li>
+                                        <li>4세대</li>
+                                        <li>3세대</li>
+                                        <li>2세대</li>
+                                        <li>1세대</li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>소켓</p>
+                                    <ul>
+                                        <li>1200소켓</li>
+                                        <li>1700소켓</li>
+                                        <li>2066소켓</li>
+                                        <li>1151소켓</li>
+                                        <li>1151v2소켓</li>
+                                        <li>1150소켓</li>
+                                        <li>1155소켓</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="main-bottom">
+                    <div class="shop-top">
+                        <p>상품</p>
+                        <div class="shop-box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td class="shop-box-left">
+                                            <div>그림</div>
+                                        </td>
+                                        <td class="shop-box-center">
+                                            <div>이름</div>
+                                        </td>
+                                        <td class="shop-box-right">
+                                            <div> 가격</div>
+                                            <div>담기</div>
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td class="shop-box-left">
+                                            <div>그림</div>
+                                        </td>
+                                        <td class="shop-box-center">
+                                            <div>이름</div>
+                                        </td>
+                                        <td class="shop-box-right">
+                                            <div> 가격</div>
+                                            <div>담기</div>
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <aside>
+                <div><p>장바구니</p></div>
+            </aside>
+        </div>
 
         <footer>
 
