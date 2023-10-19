@@ -6,54 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-
-        /* Base styling */
-
-        body {
-            width: 430px;
-            margin: 0 auto;
-            background-color: #F7CAC9;
-            font-family: 'Raleway', sans-serif;
-        }
-
-
-        .search__container {
-            padding-top: 64px;
-        }
-
-        .search__input {
-            width: 100%;
-            padding: 12px 24px;
-
-            background-color: transparent;
-            transition: transform 250ms ease-in-out;
-            font-size: 14px;
-            line-height: 18px;
-
-            color: #575756;
-            background-color: transparent;
-            /*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
-
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-size: 18px 18px;
-            background-position: 95% center;
-            border-radius: 50px;
-            border: 1px solid #575756;
-            transition: all 250ms ease-in-out;
-            backface-visibility: hidden;
-            transform-style: preserve-3d;
-        }
-    </style>
+        .tab_menu{position:relative;}
+        .tab_menu .list{overflow:hidden;}
+        .tab_menu .list li{float:left; margin-right:14px;}
+        .tab_menu .list li.is_on .btn{font-weight:bold; color:green;}
+        .tab_menu .list .btn{font-size:13px;}
+        .tab_menu .cont_area{margin-top:10px;}
+        .tab_menu .cont_area .cont{display:none; background:#555; color:#fff; text-align:center; width:250px; height:100px; line-height:100px;}
+      </style>
 </head>
 
 <body>
-    <div class="search__container">
-        <input class="search__input" type="text" placeholder="Search">
-    </div>
+    <div class="tab_menu">
+        <ul class="list">
+          <li class="is_on">
+            <a href="#tab1" class="btn">Tab Button1</a>
+          </li>
+          <li>
+            <a href="#tab2" class="btn">Tab Button2</a>
+          </li>
+          <li>
+            <a href="#tab3" class="btn">Tab Button3</a>
+          </li>
+        </ul>
+        
+        <div class="cont_area">
+          <div id="tab1" class="cont">
+            Tab Content1
+          </div>
+          <div id="tab2" class="cont">
+            Tab Content2
+          </div>
+          <div id="tab3" class="cont">
+            Tab Content3
+          </div>
+        </div>
+      </div>
 
 
 </body>
-
+<script>
+    const tabList = document.querySelectorAll('.tab_menu .list li');
+    const contents = document.querySelectorAll('.tab_menu .cont_area .cont')
+    let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
+  
+    for(var i = 0; i < tabList.length; i++){
+      tabList[i].querySelector('.btn').addEventListener('click', function(e){
+        e.preventDefault();
+        for(var j = 0; j < tabList.length; j++){
+          // 나머지 버튼 클래스 제거
+          tabList[j].classList.remove('is_on');
+  
+          // 나머지 컨텐츠 display:none 처리
+          contents[j].style.display = 'none';
+        }
+  
+        // 버튼 관련 이벤트
+        this.parentNode.classList.add('is_on');
+  
+        // 버튼 클릭시 컨텐츠 전환
+        activeCont = this.getAttribute('href');
+        document.querySelector(activeCont).style.display = 'block';
+      });
+    }
+  </script>
 </html>

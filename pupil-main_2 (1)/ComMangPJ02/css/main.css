@@ -3,8 +3,8 @@
 body {
     margin: 0;
     /* padding: 0; */
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 320px;
+    padding-right: 320px;
 }
 
 a {
@@ -42,6 +42,7 @@ header>.header-top>.header-left>ul>li {
     text-align: left;
     position: relative;
 }
+
 header>.header-top>.header-left>ul>li::after {
     content: '|';
     position: relative;
@@ -70,6 +71,7 @@ header>.header-top>.header-right>ul>li {
     width: 75px;
     text-align: right;
 }
+
 header>.header-top>.header-right>ul>li::after {
     content: '|';
     position: relative;
@@ -84,6 +86,7 @@ header>.header-top>.header-right>ul>li:last-child::after {
     display: none;
 
 }
+
 header>.header-top>.header-left>ul>.header-home::after {
     content: '|';
     position: absolute;
@@ -105,11 +108,13 @@ nav {
 nav>* {
     margin: 2px;
 }
-.nav-top{
+
+.nav-top {
     border-top: 1px solid red;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .nav-top>.nav-left {
     /* border: 1px solid gray; */
 }
@@ -176,6 +181,7 @@ nav>* {
     text-align: center;
     color: black;
 }
+
 .nav-top>.nav-right>.heart-icon {
     margin-left: 10px;
     margin-right: 10px;
@@ -189,6 +195,7 @@ nav>* {
     text-align: center;
     color: black;
 }
+
 .nav-top>.nav-right>.cart-icon {
     margin-left: 10px;
     margin-right: 10px;
@@ -202,6 +209,7 @@ nav>* {
     text-align: center;
     color: black;
 }
+
 /*  */
 .nav-bottom {
     display: flex;
@@ -244,13 +252,20 @@ section {
 
 /* ///////main-top /////////////*/
 section>.main-top {
-    border: 1px solid;
+    border-bottom: 1px solid;
     width: 850px;
+    height: 230px;
     margin: 5px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-section>.main-top>p {}
+section>.main-top>.option-top>p {
+    border-bottom: 1px solid;
+    font-size: 15px;
+    margin: 3px;
+    margin-bottom: 8px;
+}
 
 section>.main-top>.option-top>.option {
     display: flex;
@@ -258,31 +273,68 @@ section>.main-top>.option-top>.option {
 }
 
 section>.main-top>.option-top>.option>.option-name {
-    border: 1px solid;
+    
+    height: 190px;
     text-align: center;
 }
-section>.main-top>.option-top>.option>.option-name>p{
-    border: 1px solid;
+
+section>.main-top>.option-top>.option>.option-name>ul {}
+
+section>.main-top>.option-top>.option>.option-name>ul>li {
+    margin: 10px;
 }
 
 section>.main-top>.option-top>.option>.option-box {
     display: flex;
-    border: 1px solid;
     justify-content: center;
     text-align: center;
     width: 700px;
 }
 
 section>.main-top>.option-top>.option>.option-box>.op {
-    border: 1px solid;
-    margin-left: 30px;
-    margin-right: 30px;
-}
+    width: 120px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin-left: 10px;
+    margin-right: 1 0px;
+    height: 190px;
 
-section>.main-top>.option-top>.option>.option-box>.op>ul{}
-section>.main-top>.option-top>.option>.option-box>.op>ul>li{
+}
+section>.main-top>.option-top>.option>.option-box>.op>p {
+    border-bottom: 1px solid;
     margin: 5px;
 }
+/* ----------------------------------스크롤 ---------------------------------- */
+section>.main-top>.option-top>.option>.option-name>.op-ul {
+    height: 190px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section>.main-top>.option-top>.option>.option-name>.op-ul::-webkit-scrollbar {
+    width: 0px;
+}
+
+section>.main-top>.option-top>.option>.option-box>.op>.op-ul {
+    height: 155px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section>.main-top>.option-top>.option>.option-box>.op>.op-ul::-webkit-scrollbar {
+    width: 0px;
+}
+
+section>.main-top>.option-top>.option>.option-box>.op>ul {}
+
+section>.main-top>.option-top>.option>.option-box>.op>ul>li {
+    font-size: 14px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
 /* /////main-bottom//////////// */
 section>.main-bottom {
     border: 1px solid;
@@ -300,7 +352,7 @@ section>.main-bottom>.shop-top>p {}
 section>.main-bottom>.shop-top>.shop-box {
     /* border: 1px solid; */
     width: 850px;
-    height: 550px;
+    height: 1200px;
 }
 
 section>.main-bottom>.shop-top>.shop-box>table {
@@ -337,10 +389,51 @@ aside {
 
 }
 
-aside>div {
+aside>.basket {
     border: 1px solid;
-    width: 400px;
-    height: 1000px;
+    width: 350px;
+    height: 1000px auto;
     margin-top: 5px;
     margin-right: 10px;
+
+}
+aside>.basket>.basket-box{
+    /* border: 1px solid; */
+    text-align:center;
+    width: auto;
+    margin: 5px;
+}
+aside>.basket>.basket-box>input {
+    width: 100%;
+    height: 30px;
+}
+aside>.basket>.basket-box>.CPU-box>div {
+
+}
+aside>.basket>.basket-box>.CPU-box>div>p {
+    text-align: left;
+    margin: 5px;
+    margin-left: 10px;
+}
+aside>.basket>.basket-box>.CPU-box>div>ul {
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside>.basket>.basket-box>.CPU-box>div>ul>li{
+    /* border-bottom: 1px solid; */
+    margin-bottom: 10px;
+}
+aside>.basket>.basket-box>.CPU-box>div>ul>.left{
+    width: 100px;
+}
+
+aside>.basket>.basket-box>.CPU-box>div>ul>.center{
+    width: 100%;
+    text-align: right;
+}
+
+aside>.basket>.basket-box>.CPU-box>div>ul>.right{
+    width: 50px;
 }

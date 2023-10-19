@@ -24,7 +24,7 @@
     <style>
         .nav-top>.nav-left {
 
-            width: 480px;
+            width: 500px;
 
             background-image: url("img/img_logo_main.png");
             background-repeat: no-repeat;
@@ -83,7 +83,8 @@
         <nav class="nav-bottom">
             <div class="nav-left bottom-left">
                 <ul>
-                    <li><img src="img/game01.jpg" alt=""></li>
+                    <li>그림</li>
+                    <!-- <li><img src="img/game01.jpg" alt=""></li>
                     <li><img src="img/game02.jpg" alt=""></li>
                     <li><img src="img/game03.jpg" alt=""></li>
                     <li><img src="img/game04.png" alt=""></li>
@@ -93,14 +94,14 @@
                     <li><img src="img/game08.jpg" alt=""></li>
                     <li><img src="img/game09.jpg" alt=""></li>
                     <li><img src="img/game10.jpg" alt=""></li>
-                    <li><img src="img/game11.jpg" alt=""></li>
+                    <li><img src="img/game11.jpg" alt=""></li> -->
                 </ul>
             </div>
-            
-            <div class="arrow">
+
+            <!-- <div class="arrow">
                 <a href="" class="material-symbols-outlined paev">navigate_before</a>
                 <a href="" class="material-symbols-outlined next">navigate_next</a>
-            </div>
+            </div> -->
             <div class="nav-right">
                 그림
             </div>
@@ -112,26 +113,28 @@
                         <p>옵션선택</p>
                         <div class="option">
                             <div class="option-name">
-                                <p>CPU</p>
-                                <p>메인보드</p>
-                                <p>메모리</p>
-                                <p>그레픽카드</p>
-                                <p>SSD</p>
-                                <p>HDD</p>
-                                <p>케이스</p>
-                                <p>파워</p>
+                                <ul class="op-ul">
+                                    <li><a href="#tabl01" class="btn01">CPU</a></li>
+                                    <li><a href="#tabl02" class="btn">메인보드</a></li>
+                                    <li><a href="" class="btn">메모리</a></li>
+                                    <li><a href="" class="btn">그래픽카드</a></li>
+                                    <li><a href="" class="btn">SSD</a></li>
+                                    <li><a href="" class="btn">HDD</a></li>
+                                    <li><a href="" class="btn">케이스</a></li>
+                                    <li><a href="" class="btn">파워</a></li>
+                                </ul>
                             </div>
-                            <div class="option-box">
+                            <div class="option-box cpu" id="tabl01">
                                 <div class="op">
                                     <p>제조사</p>
-                                    <ul>
-                                        <li>1</li>
-                                        <li>2</li>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
                                     </ul>
                                 </div>
                                 <div class="op">
                                     <p>CPU 종류</p>
-                                    <ul>
+                                    <ul class="op-ul">
                                         <li>코어i9</li>
                                         <li>코어i7</li>
                                         <li>코어i5</li>
@@ -139,8 +142,17 @@
                                     </ul>
                                 </div>
                                 <div class="op">
+                                    <p>AMD 종류</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠9</li>
+                                        <li>라이젠7</li>
+                                        <li>라이젠5</li>
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                                <div class="op">
                                     <p>세대</p>
-                                    <ul>
+                                    <ul class="op-ul">
                                         <li>13세대</li>
                                         <li>12세대</li>
                                         <li>11세대</li>
@@ -149,17 +161,22 @@
                                         <li>8세대</li>
                                         <li>7세대</li>
                                         <li>6세대</li>
-                                        <!--  -->
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>세대</p>
+                                    <ul class="op-ul">  
                                         <li>5세대</li>
                                         <li>4세대</li>
                                         <li>3세대</li>
                                         <li>2세대</li>
                                         <li>1세대</li>
+                                        <li>PRO</li>
                                     </ul>
                                 </div>
                                 <div class="op">
                                     <p>소켓</p>
-                                    <ul>
+                                    <ul class="op-ul">
                                         <li>1200소켓</li>
                                         <li>1700소켓</li>
                                         <li>2066소켓</li>
@@ -170,7 +187,9 @@
                                     </ul>
                                 </div>
                             </div>
+                            <!--  -->
                         </div>
+                        
                     </div>
                 </article>
                 <article class="main-bottom">
@@ -219,15 +238,165 @@
                 </article>
             </section>
             <aside>
-                <div>
+                <div class="basket">
                     <p>선택 상품</p>
-                </div>
-                <!-- <div>
-                    <p>상품 이름</p>
-                    <div>
-
+                    <div class="basket-box">
+                        <!--  -->
+                        <input type="button" value="CPU">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <input type="button" value="메인보드">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="button" value="메모리">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="button" value="그래픽카드">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="button" value="SSD">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="button" value="HDD">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="button" value="케이스">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="button" value="파워">
+                        <div class="CPU-box">
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>상품 이름</p>
+                                <ul>
+                                    <li class="left">갯수</li>
+                                    <li class="center">금액</li>
+                                    <li class="right">X</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </aside>
         </div>
 
