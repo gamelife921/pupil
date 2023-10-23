@@ -1,0 +1,369 @@
+* {}
+
+body {
+    margin: 0;
+    /* padding: 0; */
+    padding-left: 320px;
+    padding-right: 320px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header {}
+
+header>.header-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid red;
+    height: 37px;
+}
+
+header>.header-top>.header-left {
+    /* border: 1px solid; */
+    width: 300px;
+    margin-top: 5px;
+}
+
+header>.header-top>.header-left>ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+header>.header-top>.header-left>ul>li {
+    width: 100px;
+    text-align: left;
+    position: relative;
+}
+
+header>.header-top>.header-left>ul>li::after {
+    content: '|';
+    position: relative;
+    font-size: 15px;
+    top: 0px;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
+}
+
+header>.header-top>.header-left>ul>li:last-child::after {
+    display: none;
+
+}
+
+header>.header-top>.header-right {
+    /* border: 1px solid; */
+    width: 420px;
+    margin: 5px;
+}
+
+header>.header-top>.header-right>ul {
+    display: flex;
+}
+
+header>.header-top>.header-right>ul>li {
+    width: 75px;
+    text-align: right;
+}
+
+header>.header-top>.header-right>ul>li::after {
+    content: '|';
+    position: relative;
+    font-size: 15px;
+    top: 0px;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
+}
+
+header>.header-top>.header-right>ul>li:last-child::after {
+    display: none;
+
+}
+
+header>.header-top>.header-left>ul>.header-home::after {
+    content: '|';
+    position: absolute;
+    font-size: 15px;
+    top: 0px;
+    bottom: 10px;
+    left: 35px;
+    right: 0px;
+}
+
+/* **************************************** nav ********************************************* */
+
+nav {
+    height: 100px;
+    display: flex;
+    padding: 10px;
+}
+
+nav>* {
+    margin: 2px;
+}
+
+.nav-top {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav-top>.nav-left {
+    /* border: 1px solid gray; */
+}
+
+.nav-top>.nav-center {
+    /* border: 1px solid gray; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-top>.nav-center>.search {
+    position: relative;
+
+}
+
+.nav-top>.center input {
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.nav-top>.nav-center input::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+}
+
+.nav-top>.nav-center>.search>.form-control {
+    width: 400px;
+    height: 50px;
+}
+
+.nav-top>.nav-center>.search .search-icon {
+    position: absolute;
+    font-size: 50px;
+    top: 0px;
+    left: 355px;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.nav-top>.nav-right {
+    border: 1px double red;
+    border-radius: 10px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav-top>.nav-right>.login-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.nav-top>.nav-right>.login-icon::after {
+    content: "로그인";
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    color: black;
+}
+
+.nav-top>.nav-right>.heart-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.nav-top>.nav-right>.heart-icon::after {
+    content: "관심상품";
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    color: black;
+}
+
+.nav-top>.nav-right>.cart-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.nav-top>.nav-right>.cart-icon::after {
+    content: "장바구니";
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    color: black;
+}
+
+/************************** nav-bottom *******************************************************  */
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    /* border: 1px solid; */
+}
+
+.nav-bottom>.nav-left {
+    width: 850px;
+    height: 95px;
+
+    overflow: hidden;
+    position: relative;
+
+    user-select: none;
+}
+
+.nav-bottom>.nav-left>ul {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    left: 0px;
+
+    flex-shrink: 0;
+
+    /* transition */
+    transition: left 0.15s;
+
+}
+
+.nav-bottom>.nav-left>ul>li {
+    margin: 5px;
+}
+
+.nav-bottom>.arrow>.slide_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* position */
+    position: absolute;
+    /* 버튼이 중앙에 위치하게 하기위해 계산 */
+    top: calc(22%);
+
+    /* size */
+    width: 32px;
+    height: 32px;
+
+    /* style */
+    border-radius: 100%;
+    background-color: #cccc;
+    cursor: pointer;
+}
+
+.slide_prev_button {
+    left: 295px;
+}
+
+.slide_next_button {
+    right: 36%;
+}
+
+/*  */
+section {
+    border: 1px solid;
+    height: 800px;
+}
+
+section>article {
+    border: 1px solid;
+    margin: 5px;
+    height: 750px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+}
+
+section>div {
+    text-align: right;
+}
+
+section>article>.product-name {
+    display: flex;
+}
+
+section>article>.product-name>p {
+    margin: 5px;
+    margin-right: 10px;
+
+}
+
+section>article>.product-name>input {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 50px;
+    width: 700px;
+}
+
+section>article>.product-text {
+    margin-top: 20px;
+    display: flex;
+}
+
+section>article>.product-text>p {
+    margin: 5px;
+    margin-right: 10px;
+}
+
+section>article>.product-text>input {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 50px;
+    width: 700px;
+}
+
+section>article>.product-money {
+    display: flex;
+    margin-top: 20px;
+}
+
+section>article>.product-money>p {}
+
+section>article>.product-money>input {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 15px;
+    width: 200px;
+}
+
+section>article>.product-List {
+    display: flex;
+}
+
+section>article>.product-picture {}
+
+section>article>.product-picture>p {}
+
+section>article>.product-picture>.pict-center {
+    border: 1px solid;
+    width: 780px;
+    height: 250px;
+}
+
+section>article>.product-picture>.pict-bottam {
+    text-align: right;
+}
+
+section>article>.product-picture>.pict-bottam>input {}

@@ -38,27 +38,27 @@
 const lorem = document.querySelector('.op');
 
 lorem.addEventListener('scroll', function () {
-  lorem.scrollHeight - 10 < lorem.scrollTop + lorem.clientHeight
+    lorem.scrollHeight - 10 < lorem.scrollTop + lorem.clientHeight
 
 
 });
 
-    // class가 "btn"인 모든 요소를 가져옵니다.
-    const buttons = document.querySelectorAll('.btn');
-        
-    // 버튼을 클릭할 때 option-box를 토글합니다.
-    buttons.forEach(button => {
-        button.addEventListener('click', (event) => {
-            event.preventDefault(); // 기본 동작 막기
-            const targetId = button.getAttribute('href').substring(1); // href 속성에서 ID 추출
-            const targetBox = document.getElementById(targetId); // 해당 ID의 option-box 가져오기
-            if (targetBox) {
-                // 모든 option-box를 숨깁니다.
-                document.querySelectorAll('.option-box').forEach(box => {
-                    box.style.display = 'none';
-                });
-                // 클릭한 버튼과 관련된 option-box를 표시합니다.
-                targetBox.style.display = 'block';
-            }
-        });
+// class가 "btn"인 모든 요소를 가져옵니다.
+const buttons = document.querySelectorAll('.btn');
+
+// 버튼을 클릭할 때 option-box를 토글합니다.
+buttons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault(); // 기본 동작 막기
+        const targetId = button.getAttribute('href').substring(1); // href 속성에서 ID 추출
+        const targetBox = document.getElementById(targetId); // 해당 ID의 option-box 가져오기
+        if (targetBox) {
+            // 모든 option-box를 숨깁니다.
+            document.querySelectorAll('.option-box').forEach(box => {
+                box.style.display = 'none';
+            });
+            // 클릭한 버튼과 관련된 option-box를 표시합니다.
+            targetBox.style.display = 'block';
+        }
     });
+});

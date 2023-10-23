@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <!-- jQuery 라이브러리를 로드하는 CDN 링크 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- 스타일 mind -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="jsp/main.js">
@@ -32,12 +33,27 @@
             background-position: center;
         }
 
-        .nav-bottom>.nav-left>ul>.game01 {
+
+
+        section>.main-bottom>.shop-top>.shop-box>table>thead>tr>.shop-box-left {
             width: 200px;
-            background-image: url("img/game01.jpg");
+            height: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin: 5px;
+
+            background-image: url("img/280.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+
+        .nav-bottom>.nav-right {
+            background-image: url("img/TeemoPC.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            background-position: center;
+            width: 340px;
+            height: 95px;
         }
     </style>
 
@@ -50,7 +66,7 @@
                 <div class="header-left">
                     <ul>
                         <li style="width: 50px;" class="header-home"><a href="" class="material-symbols-outlined "
-                                style="font-size: 25px;">home</a></li>
+                                style="font-size: 22px;">home</a></li>
                         <li><a href="">PC구매상담</a></li>
                         <li><a href="">로그인</a></li>
                     </ul>
@@ -82,28 +98,27 @@
         </nav>
         <nav class="nav-bottom">
             <div class="nav-left bottom-left">
-                <ul>
-                    <li>그림</li>
-                    <!-- <li><img src="img/game01.jpg" alt=""></li>
-                    <li><img src="img/game02.jpg" alt=""></li>
-                    <li><img src="img/game03.jpg" alt=""></li>
-                    <li><img src="img/game04.png" alt=""></li>
-                    <li><img src="img/game05.jpg" alt=""></li>
-                    <li><img src="img/game06.jpg" alt=""></li>
-                    <li><img src="img/game07.jpg" alt=""></li>
-                    <li><img src="img/game08.jpg" alt=""></li>
-                    <li><img src="img/game09.jpg" alt=""></li>
-                    <li><img src="img/game10.jpg" alt=""></li>
-                    <li><img src="img/game11.jpg" alt=""></li> -->
+                <ul class=" slide">
+                <li class="slide_item img01"><img src="img/game01.jpg" alt=""></li>
+                <li class="slide_item img02"><img src="img/game02.jpg" alt=""></li>
+                <li class="slide_item img03"><img src="img/game03.jpg" alt=""></li>
+                <li class="slide_item img04"><img src="img/game04.png" alt=""></li>
+                <li class="slide_item img05"><img src="img/game05.jpg" alt=""></li>
+                <li class="slide_item img06"><img src="img/game06.jpg" alt=""></li>
+                <li class="slide_item img07"><img src="img/game07.jpg" alt=""></li>
+                <li class="slide_item img08"><img src="img/game08.jpg" alt=""></li>
+                <li class="slide_item img09"><img src="img/game09.jpg" alt=""></li>
+                <li class="slide_item img010"><img src="img/game10.jpg" alt=""></li>
+                <li class="slide_item img011"><img src="img/game11.jpg" alt=""></li>
                 </ul>
             </div>
+            <div class="arrow">
+                <div class="material-symbols-outlined slide_button slide_prev_button">navigate_before</div>
+                <div class="material-symbols-outlined slide_button slide_next_button" style="">navigate_next</div>
+            </div>
 
-            <!-- <div class="arrow">
-                <a href="" class="material-symbols-outlined paev">navigate_before</a>
-                <a href="" class="material-symbols-outlined next">navigate_next</a>
-            </div> -->
             <div class="nav-right">
-                그림
+
             </div>
         </nav>
         <div class="main">
@@ -114,17 +129,18 @@
                         <div class="option">
                             <div class="option-name">
                                 <ul class="op-ul">
-                                    <li><a href="#tabl01" class="btn01">CPU</a></li>
-                                    <li><a href="#tabl02" class="btn">메인보드</a></li>
-                                    <li><a href="" class="btn">메모리</a></li>
-                                    <li><a href="" class="btn">그래픽카드</a></li>
-                                    <li><a href="" class="btn">SSD</a></li>
-                                    <li><a href="" class="btn">HDD</a></li>
-                                    <li><a href="" class="btn">케이스</a></li>
-                                    <li><a href="" class="btn">파워</a></li>
+                                    <li><input type="button" class="btn01" value="CPU"></li>
+                                    <li><input type="button" class="btn2" value="메인보드"></li>
+                                    <li><input type="button" class="btn3" value="메모리"></li>
+                                    <li><input type="button" class="btn4" value="그래픽카드"></li>
+                                    <li><input type="button" class="btn5" value="SSD"></li>
+                                    <li><input type="button" class="btn6" value="HDD"></li>
+                                    <li><input type="button" class="btn7" value="케이스"></li>
+                                    <li><input type="button" class="btn8" value="파워"></li>
                                 </ul>
                             </div>
-                            <div class="option-box cpu" id="tabl01">
+                            <!-- ///////////////////////// CPU //////////////////////////////// -->
+                            <div class="option-box opt-cpu" id="tabl01">
                                 <div class="op">
                                     <p>제조사</p>
                                     <ul class="op-ul">
@@ -133,7 +149,7 @@
                                     </ul>
                                 </div>
                                 <div class="op">
-                                    <p>CPU 종류</p>
+                                    <p>인텔 종류</p>
                                     <ul class="op-ul">
                                         <li>코어i9</li>
                                         <li>코어i7</li>
@@ -165,7 +181,7 @@
                                 </div>
                                 <div class="op">
                                     <p>세대</p>
-                                    <ul class="op-ul">  
+                                    <ul class="op-ul">
                                         <li>5세대</li>
                                         <li>4세대</li>
                                         <li>3세대</li>
@@ -187,27 +203,238 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--  -->
+                            <!-- ///////////////////////// 메인보드 //////////////////////////////// -->
+                            <div class="option-box opt-board" id="tabl01" style="display: none;">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">MSI</a></li>
+                                        <li><a href="">ASUS</a></li>
+                                        <li><a href="">ASRock</a></li>
+                                        <li><a href="">GIGABYTE</a></li>
+                                        <li><a href="">ECS</a></li>
+                                        <li><a href="">NZXT</a></li>
+                                        <li><a href="">BIOSTAR</a></li>
+                                        <li><a href="">AFOX</a></li>
+                                        <li><a href="">ASRock Rack</a></li>
+                                        <li><a href="">COLORFUL</a></li>
+                                        <li><a href="">FOXCONN</a></li>
+                                        <li><a href="">LattePanda</a></li>
+                                        <li><a href="">PEGATRON</a></li>
+                                        <li><a href="">Retroflag</a></li>
+                                        <li><a href="">Supemicro</a></li>
+                                        <li><a href="">에너지옵티머스</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>제품 분류</p>
+                                    <ul class="op-ul">
+                                        <li>인텔 CPU용</li>
+                                        <li>AMD CPU용</li>
+                                        <li>임베디드</li>
+                                        <li>주변기기</li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>CPU 서켓</p>
+                                    <ul class="op-ul">
+                                        <li>인텔 1700 소켓</li>
+                                        <li>인텔 1200 소켓</li>
+                                        <li>인텔 4677 소켓</li>
+                                        <li>인텔 1151 소켓</li>
+                                        <li>AMD AM5 소켓</li>
+                                        <li>AMD AM4 소켓</li>
+                                        <li>AMD sTRX4 소켓</li>
+                                        <li>AMD sWRX8 소켓</li>
+                                        <li>AMD TR4 소켓</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- ///////////////////////// 메모리 ////////////////////////////////  -->
+                            <div class="option-box opt-ran" id="tabl01" style="display: none;">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>사용 장치</p>
+                                    <ul class="op-ul">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>제품 분류</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>메모리 용량</p>
+                                    <ul class="op-ul">
+                                        <li>6세대</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- ///////////////////////// 그래픽카드 ////////////////////////////////  -->
+                            <div class="option-box opt-grap" id="tabl01" style="display: none;">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>칩셋 제조사</p>
+                                    <ul class="op-ul">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>칩셋</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- ///////////////////////// SSD ////////////////////////////////  -->
+                            <div class="option-box opt-ssd" id="tabl01" style="display: none;">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p> 인터페이스</p>
+                                    <ul class="op-ul">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>용량</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- ///////////////////////// HDD ////////////////////////////////  -->
+                            <div class="option-box opt-hdd" id="tabl01" style="display: none;">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>제품 분류</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>인터페이스</p>
+                                    <ul class="op-ul">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>용량</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- ///////////////////////// 케이스 ////////////////////////////////  -->
+                            <div class="option-box opt-keis" id="tabl01" style="display: none;">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>제품 분류</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>케이스 크디</p>
+                                    <ul class="op-ul">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>지원파워 규격</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>지원보드 규격</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- ///////////////////////// 파워 ////////////////////////////////  -->
+                            <div class="option-box opt-power" id="tabl01" style="display: none;">
+                                <div class="op">
+                                    <p>제조사</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>제품 분류</p>
+                                    <ul class="op-ul">
+                                        <li><a href="">인텔</a></li>
+                                        <li><a href="">AMD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>정격 출력</p>
+                                    <ul class="op-ul">
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="op">
+                                    <p>80PLUS 인증</p>
+                                    <ul class="op-ul">
+                                        <li>라이젠3</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        
                     </div>
                 </article>
                 <article class="main-bottom">
                     <div class="shop-top">
-                        <p>상품</p>
+                        <p>오늘의 상품</p>
                         <div class="shop-box">
                             <table>
                                 <thead>
                                     <tr>
                                         <td class="shop-box-left">
-                                            <div>그림</div>
                                         </td>
                                         <td class="shop-box-center">
-                                            <div>이름</div>
+                                            <div>LG전자 LG그램 13세대16ZD90RU-GX56K SSD 256GB/16G/대화면 휴대용 가벼운노트북/4종사은품증정_
+                                            </div>
                                         </td>
                                         <td class="shop-box-right">
-                                            <div> 가격</div>
-                                            <div>담기</div>
+                                            <div> 1,299,000원</div>
+                                            <div class="material-symbols-outlined down">download</div>
                                         </td>
                                     </tr>
                                 </thead>
@@ -216,14 +443,14 @@
                                 <thead>
                                     <tr>
                                         <td class="shop-box-left">
-                                            <div>그림</div>
+                                            <div></div>
                                         </td>
                                         <td class="shop-box-center">
                                             <div>이름</div>
                                         </td>
                                         <td class="shop-box-right">
                                             <div> 가격</div>
-                                            <div>담기</div>
+                                            <div class="material-symbols-outlined down">download</div>
                                         </td>
                                     </tr>
                                 </thead>
@@ -237,13 +464,14 @@
                     </div>
                 </article>
             </section>
+            <!-- 장바구니 -->
             <aside>
                 <div class="basket">
                     <p>선택 상품</p>
                     <div class="basket-box">
-                        <!--  -->
-                        <input type="button" value="CPU">
-                        <div class="CPU-box">
+                        <!-- CPU -->
+                        <input type="button" class="bask-cpu" value="CPU">
+                        <div class="cpu-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
@@ -261,9 +489,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--  -->
-                        <input type="button" value="메인보드">
-                        <div class="CPU-box">
+                        <!-- 메인보드 -->
+                        <input type="button" class="bask-board" value="메인보드">
+                        <div class="board-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
@@ -281,8 +509,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <input type="button" value="메모리">
-                        <div class="CPU-box">
+                        <!-- 메모리 -->
+                        <input type="button" class="bask-ram" value="메모리">
+                        <div class="ram-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
@@ -300,8 +529,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <input type="button" value="그래픽카드">
-                        <div class="CPU-box">
+                        <!-- 그래픽카드 -->
+                        <input type="button" class="bask-grap" value="그래픽카드">
+                        <div class="grap-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
@@ -319,8 +549,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <input type="button" value="SSD">
-                        <div class="CPU-box">
+                        <!-- SSD -->
+                        <input type="button" class="bask-ssd" value="SSD">
+                        <div class="ssd-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
@@ -338,8 +569,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <input type="button" value="HDD">
-                        <div class="CPU-box">
+                        <!-- HDD -->
+                        <input type="button" class="bask-hdd" value="HDD">
+                        <div class="hdd-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
@@ -357,14 +589,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <input type="button" value="케이스">
-                        <div class="CPU-box">
+                        <!-- 케이스 -->
+                        <input type="button" class="bask-keis" value="케이스">
+                        <div class="keis-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
                                     <li class="left">갯수</li>
                                     <li class="center">금액</li>
-                                    <li class="right">X</li>
+                                    <li class="right">X</li>9
                                 </ul>
                             </div>
                             <div>
@@ -376,8 +609,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <input type="button" value="파워">
-                        <div class="CPU-box">
+                        <!-- 파워 -->
+                        <input type="button" class="bask-power" value="파워">
+                        <div class="power-box bask-in">
                             <div>
                                 <p>상품 이름</p>
                                 <ul>
@@ -396,6 +630,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="basket-bottom">
+                        <div class="back-bottom-box">
+                            <div class="back-bottom-top">
+                                <div class="back-top-left">총 0개 폼목 선택</div>
+                                <input type="button" class="bakc-top-right" value="전체삭제">
+                            </div>
+                            <div class="back-bottom-center">
+                                <div class="back-center-left">총 합계금액</div>
+                                <div class="back-center-right">0원</div>
+                            </div>
+                            <input type="button" class="back-bottom-bottom" value="구매하기">
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -403,6 +650,151 @@
         <footer>
 
         </footer>
+        <script>
+            function toggleDisplay(element, content) {
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            }
+
+            //장바구니 선택 창 닫기 설정
+            var CPUdropdown = document.querySelector(".bask-cpu");
+            var cpuContent = document.querySelector(".cpu-box");
+
+            var ramdropdown = document.querySelector(".bask-board");
+            var ramContent = document.querySelector(".board-box");
+
+            var boarddropdown = document.querySelector(".bask-ram");
+            var boardContent = document.querySelector(".ram-box");
+
+            var GrapCarddropdown = document.querySelector(".bask-grap");
+            var GrapCardContent = document.querySelector(".grap-box");
+
+            var ssdropdown = document.querySelector(".dbask-ssd");
+            var ssdContent = document.querySelector(".ssd-box");
+
+            var hddropdown = document.querySelector(".bask-hdd");
+            var hddContent = document.querySelector(".hdd-box");
+
+            var keiseudropdown = document.querySelector(".bask-keis");
+            var keiseuContent = document.querySelector(".keis-box");
+
+            var Powerdropdown = document.querySelector(".bask-power");
+            var PowerContent = document.querySelector(".power-box");
+
+            CPUdropdown.addEventListener("click", function () {
+                toggleDisplay(CPUdropdown, cpuContent);
+            });
+            ramdropdown.addEventListener("click", function () {
+                toggleDisplay(ramdropdown, ramContent);
+            });
+            boarddropdown.addEventListener("click", function () {
+                toggleDisplay(boarddropdown, boardContent);
+            });
+            GrapCarddropdown.addEventListener("click", function () {
+                toggleDisplay(GrapCarddropdown, GrapCardContent);
+            });
+            ssdropdown.addEventListener("click", function () {
+                toggleDisplay(ssdropdown, ssdContent);
+            });
+            hddropdown.addEventListener("click", function () {
+                toggleDisplay(hddropdown, hddContent);
+            });
+            keiseudropdown.addEventListener("click", function () {
+                toggleDisplay(keiseudropdown, keiseuContent);
+            });
+            Powerdropdown.addEventListener("click", function () {
+                toggleDisplay(Powerdropdown, PowerContent);
+
+            });
+        </script>
+        <script>
+            // 옵션 선택
+            //장바구니 선택 창 닫기 설정
+            var CPUoption = document.querySelector(".btn01");
+            var cpuContentOP = document.querySelector(".opt-cpu");
+
+            var ramoption = document.querySelector(".btn2");
+            var ramContentOP = document.querySelector(".opt-board");
+
+            var boardoption = document.querySelector(".btn3");
+            var boardContentOP = document.querySelector(".opt-ran");
+
+            var GrapCardoption = document.querySelector(".btn4");
+            var GrapCardContentOP = document.querySelector(".opt-grap");
+
+            var ssdoption = document.querySelector(".btn5");
+            var ssdContentOP = document.querySelector(".opt-ssd");
+
+            var hddoption = document.querySelector(".btn6");
+            var hddContentOP = document.querySelector(".opt-hdd");
+
+            var keiseudoption = document.querySelector(".btn7");
+            var keiseuContentOP = document.querySelector(".opt-keis");
+
+            var Powerdoption = document.querySelector(".btn8");
+            var PowerContentOP = document.querySelector(".opt-power");
+
+            CPUoption.addEventListener("click", function () {
+                if (cpuContentOP.style.display === "block") {
+                    cpuContentOP.style.display = "none";
+                } else {
+                    cpuContentOP.style.display = "block";
+                }
+            });
+            ramoption.addEventListener("click", function () {
+                if (ramContentOP.style.display === "block") {
+                    ramContentOP.style.display = "none";
+                } else {
+                    ramContentOP.style.display = "block";
+                }
+            });
+            boardoption.addEventListener("click", function () {
+                if (boardContentOP.style.display === "block") {
+                    boardContentOP.style.display = "none";
+                } else {
+                    boardContentOP.style.display = "block";
+                }
+            });
+            GrapCardoption.addEventListener("click", function () {
+                if (GrapCardContentOP.style.display === "block") {
+                    GrapCardContentOP.style.display = "none";
+                } else {
+                    GrapCardContentOP.style.display = "block";
+                }
+            });
+            ssdoption.addEventListener("click", function () {
+                if (ssdContentOP.style.display === "block") {
+                    ssdContentOP.style.display = "none";
+                } else {
+                    ssdContentOP.style.display = "block";
+                }
+            });
+            hddoption.addEventListener("click", function () {
+                if (hddContentOP.style.display === "block") {
+                    hddContentOP.style.display = "none";
+                } else {
+                    hddContentOP.style.display = "block";
+                }
+            });
+            keiseudoption.addEventListener("click", function () {
+                if (keiseuContentOP.style.display === "block") {
+                    keiseuContentOP.style.display = "none";
+                } else {
+                    keiseuContentOP.style.display = "block";
+                }
+            });
+            Powerdoption.addEventListener("click", function () {
+                if (PowerContentOP.style.display === "block") {
+                    PowerContentOP.style.display = "none";
+                } else {
+                    PowerContentOP.style.display = "block";
+                }
+
+            });
+        </script>
     </div>
 </body>
 
