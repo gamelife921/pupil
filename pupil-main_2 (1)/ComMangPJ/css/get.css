@@ -18,7 +18,9 @@ ul {
     list-style-type: none;
 }
 
-header {}
+header {
+    width: 1263px;
+}
 
 header>.header-top {
     display: flex;
@@ -106,6 +108,8 @@ nav {
     height: 100px;
     display: flex;
     padding: 10px;
+
+    width: 1243px;
 }
 
 nav>* {

@@ -18,7 +18,9 @@ ul {
     list-style-type: none;
 }
 
-header {}
+header {
+    width: 1263px;
+}
 
 header>.header-top {
     display: flex;
@@ -89,7 +91,7 @@ header>.header-top>.header-right>ul>li:last-child::after {
     display: none;
 
 }
-
+   
 header>.header-top>.header-left>ul>.header-home::after {
     content: '|';
     position: absolute;
@@ -106,6 +108,8 @@ nav {
     height: 100px;
     display: flex;
     padding: 10px;
+
+    width: 1243px;
 }
 
 nav>* {
@@ -220,7 +224,7 @@ nav>* {
     display: flex;
     justify-content: space-between;
 
-    /* border: 1px solid; */
+    border-bottom: 1px solid;
 }
 
 .nav-bottom>.nav-left {
@@ -283,9 +287,11 @@ nav>* {
 
 section {
     border: 1px solid;
+    width: 1260px;
     border-radius: 10px;
     height: 800px auto;
     margin-bottom: 80px;
+    margin-top: 30px;
 }
 /* --------------------------------------- 등록 버튼 ------------------------------------- */
 section>div {

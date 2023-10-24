@@ -18,7 +18,9 @@ ul {
     list-style-type: none;
 }
 
-header {}
+header {
+    width: 1263px;
+}
 
 header>.header-top {
     display: flex;
@@ -36,7 +38,7 @@ header>.header-top>.header-left {
 header>.header-top>.header-left>ul {
     display: flex;
     list-style-type: none;
-    
+
 }
 
 header>.header-top>.header-left>ul>li {
@@ -106,6 +108,8 @@ nav {
     height: 100px;
     display: flex;
     padding: 10px;
+
+    width: 1243px;
 }
 
 nav>* {
@@ -466,6 +470,7 @@ aside>.basket>.basket-box>input {
 aside>.basket>.basket-box>.bask-in {
     display: none;
 }
+
 aside>.basket>.basket-box>.bask-in>div {}
 
 aside>.basket>.basket-box>.bask-in>div>p {
@@ -503,6 +508,7 @@ aside>.basket>.basket-bottom>.back-bottom-box {
     border-top: 1px solid;
     padding: 5px;
 }
+
 aside>.basket>.basket-bottom>.back-bottom-box>* {
     margin: 5px;
 }
@@ -516,18 +522,16 @@ aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-top>.back-top-left {
     margin-right: 10px;
 }
 
-aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-top>.back-top-rigth{
-}
+aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-top>.back-top-rigth {}
 
 aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-center {
     display: flex;
     justify-content: space-between;
 }
-aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-center>.back-center-left {
-}
-aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-center>.back-center-right {
-    
-}
+
+aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-center>.back-center-left {}
+
+aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-center>.back-center-right {}
 
 aside>.basket>.basket-bottom>.back-bottom-box>.back-bottom-bottom {
     text-align: center;
