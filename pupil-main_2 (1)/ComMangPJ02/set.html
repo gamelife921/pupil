@@ -103,47 +103,60 @@
         </nav>
         <!--  -->
         <section style="">
+            <div style="display: flex; justify-content: center;">
+                <h1 style="font-size: 30px;">상품 등록</h1>
+            </div>
             <article style="">
-                <!--  -->
-                <div style="" class="product-name">
-                    <p>제목</p>
-                    <input type="text" style="">
-                </div>
-                <!--  -->
-                <div class="product-text">
-                    <p>내용</p>
-                    <input type="text" style="">
-                </div>
-                <!--  -->
-                <div class="product-money">
-                    <p>가격</p>
-                    <input type="text">
-                </div>
-                <!--  -->
-                <div class="product-List">
-                    <p>제품 종류</p>
-                    <select id="myComboBox">
-                        <option value="option1">CPU</option>
-                        <option value="option2">그래픽카드</option>
-                        <option value="option3">메인보드</option>
-                        <option value="option4">SSD</option>
-                        <option value="option5">HDD</option>
-                        <option value="option6">메모리</option>
-                        <option value="option7">케이스</option>
-                        <option value="option8">파워</option>
-                    </select>
-                </div>
-                <!--  -->
-                <div class="product-picture">
-                    <p>사진</p>
-                    <div class="pict-center" style="">
-
-                    </div>
-                    <div class="pict-bottam">
-                        <input type="button" value="사진 올리기">
-                    </div>
-                </div>
-
+                <ul>
+                    <li class="goods-user">
+                        <p style="padding-right: 50px;">작성자</p>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </li>
+                    <!-- -------------- 제목 ---------------- -->
+                    <li class="goods-name">
+                        <p >제목</p>
+                        <input type="text">
+                    </li>
+                    <!-- -------------- 내용 ---------------- -->
+                    <li class="goods-text">
+                        <p>내용</p>
+                        <input type="text">
+                    </li>
+                    <!-- -------------- 가격 ---------------- -->
+                    <li class="goods-money">
+                        <p>가격</p>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </li>
+                    <!-- -------------- 콤보박스 ---------------- -->
+                    <li class="goods-chck">
+                        <p>제품 종류</p>
+                        <div>
+                            <select id="myComboBox">
+                                <option value="option1">CPU</option>
+                                <option value="option2">그래픽카드</option>
+                                <option value="option3">메인보드</option>
+                                <option value="option4">SSD</option>
+                                <option value="option5">HDD</option>
+                                <option value="option6">메모리</option>
+                                <option value="option7">케이스</option>
+                                <option value="option8">파워</option>
+                            </select>
+                        </div>
+                    </li>
+                    <!-- -------------- 사진 ---------------- -->
+                    <li class="goods-pict">
+                        <p class="pict-left">사진</p>
+                        <div class="pict-center">
+                        </div>
+                    </li>
+                    <li class="pict-right">
+                        <input type="button" value="사진 첨부">
+                    </li>
+                </ul>
             </article>
             <div>
                 <input type="button" value="등록">
