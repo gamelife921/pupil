@@ -297,7 +297,10 @@ section {
 section>div {
     text-align: center;
 }
-section>div>input {
+section>form>div {
+    text-align: center;
+}
+section>form>div>input {
     width: 180px;
     height: 50px;
     margin: 10px;
@@ -306,43 +309,43 @@ section>div>input {
     border: 1px solid;
     border-radius: 10px;
 }
-section>article {
+section>form>article {
     margin: 5px;
     height: 750px auto;
     padding-left: 200px;
     padding-right: 200px;
 }
-section>article>ul{
+section>form>article>ul{
     
 }
 
-section>article>ul>li>*{
+section>form>article>ul>li>*{
     margin-top: 30px;
 }
 /* --------------------------------------- 작성자 ------------------------------------- */
-section>article>ul>.goods-user{
+section>form>article>ul>.goods-user{
     margin-top: 5px;
     display: flex;
     justify-content: space-around;
 
 }
-section>article>ul>.goods-user>div{
+section>form>article>ul>.goods-user>div{
     width: 710px;
 }
-section>article>ul>.goods-user>div>input{
+section>form>article>ul>.goods-user>div>input{
     border: none;
     border-bottom: 1px solid;
 }
 
 /* --------------------------------------- 제목 ------------------------------------- */
-section>article>ul>.goods-name{
+section>form>article>ul>.goods-name{
     margin-top: 5px;
     display: flex;
     justify-content: space-around;
 
 }
 
-section>article>ul>.goods-name>input{
+section>form>article>ul>.goods-name>input{
     width: 700px;
     height: 30px;
     margin-left: 55px;
@@ -352,26 +355,26 @@ section>article>ul>.goods-name>input{
 }
 /* --------------------------------------- 내용 ------------------------------------- */
 
-section>article>ul>.goods-text{
+section>form>article>ul>.goods-text{
     display: flex;
     justify-content: space-around;
 }
-section>article>ul>.goods-text>input{
+section>form>article>ul>.goods-text>input{
     width: 700px;
     height: 200px;
     margin-left: 55px;
 }
 /* --------------------------------------- 금액 ------------------------------------- */
 
-section>article>ul>.goods-money{
+section>form>article>ul>.goods-money{
     display: flex;
     justify-content: space-around;
 }
-section>article>ul>.goods-money>div{
+section>form>article>ul>.goods-money>div{
     width: 700px;
     margin-left: 30px;
 }
-section>article>ul>.goods-money>div>input{
+section>form>article>ul>.goods-money>div>input{
     width: 200px;
     height: 30px;
 
@@ -381,16 +384,16 @@ section>article>ul>.goods-money>div>input{
 
 /* --------------------------------------- 콤보박스 ------------------------------------- */
 
-section>article>ul>.goods-chck{
+section>form>article>ul>.goods-chck{
     display: flex;
     justify-content: space-around;
     height: 60px;
 }
-section>article>ul>.goods-chck>div{
+section>form>article>ul>.goods-chck>div{
     width: 700px;
     margin-bottom: 50px;
 }
-section>article>ul>.goods-chck>div>select{
+section>form>article>ul>.goods-chck>div>select{
     width: 150px;
     height: 30px;
     text-align: center;
@@ -398,28 +401,28 @@ section>article>ul>.goods-chck>div>select{
 }
 
 /* --------------------------------------- 사진 ------------------------------------- */
-section>article>ul>.goods-pict{
+section>form>article>ul>.goods-pict{
     display: flex;
     justify-content: space-around;
 }
-section>article>ul>.goods-pict>.pict-left{
+section>form>article>ul>.goods-pict>.pict-left{
 
 }
-section>article>ul>.goods-pict>.pict-center{
+section>form>article>ul>.goods-pict>.pict-center{
     border: 1px solid;
     width: 700px;
     height: 300px;
     margin-bottom: 2px;
     margin-left: 55px;
 }
-section>article>ul>.pict-right{
+section>form>article>ul>.pict-right{
     margin-top: 10px;
     margin-right: 50px;
     margin-bottom: 10px;
     display: flex;
     justify-content: right;
 }
-section>article>ul>.pict-right>input{
+section>form>article>ul>.pict-right>input{
     margin-top: 5px;
     margin-bottom: 50px;
 }

@@ -218,3 +218,139 @@ nav>* {
     text-align: center;
     color: black;
 }
+
+/* **************************************** nav ********************************************* */
+section {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+    width: 1260px;
+    height: 400px;
+}
+
+section>.page-top {}
+
+section>.page-top>.page-top-one{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+}
+section>.page-top>.page-top-one>.page-goods {
+
+}
+section>.page-top>.page-top-two {}
+/*  */
+.page-center{
+    border: 1px solid;
+    width: 1260px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*  */
+section>.page-bottom {
+    width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+section>.page-bottom>.page-box-one {
+    margin-bottom: 10px;
+
+}
+section>.page-bottom>.page-box-one>ul>.page-one-top{
+    font-size: 19px;
+    font-weight: bold;
+
+}
+section>.page-bottom>.page-box-one>ul>.page-one-bottom>div{
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+section>.page-bottom>.page-box-two {
+    margin-bottom: 10px;
+
+}
+section>.page-bottom>.page-box-two>div{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+section>.page-bottom>.page-box-two>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+section>.page-bottom>.page-box-two>ul>.page-two-discount{
+    margin-left: 5px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+section>.page-bottom>.page-box-two>ul>.page-two-link>div{
+    font-size: 35px;
+    width: 40px;
+}
+
+section>.page-bottom>.page-box-three {
+    margin-bottom: 10px;
+    display: flex;
+}
+section>.page-bottom>.page-box-three>div{
+    margin-right: 20px;
+}
+
+section>.page-bottom>.page-box-four {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+section>.page-bottom>.page-box-four>input {
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+}
+
+/*  */
+aside {}
+
+aside>.thing-left {
+    border: 1px solid;
+    width: 700px;
+    height: 1000px;
+}
+
+aside>.thing-right {
+    border: 1px solid;
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+}
+
+aside>.thing-right>.thing-box-onw {
+    border: 1px solid;
+    height: 500px;
+    width: 250px;
+} 
+
+aside>.thing-right>.thing-box-two {
+
+}
+
+aside>.thing-right>.thing-box-three {
+
+}
+
+footer {
+    border: 1px solid;
+    width: 1260px;
+    height: 50px;
+    margin-top: 20px;
+}

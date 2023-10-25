@@ -27,6 +27,15 @@
             background-size: cover;
             background-position: center;
         }
+
+        section>.page-top>.page-top-one>.page-goods{
+            width: auto;
+            height: 300px;
+            background-image: url("img/280.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 
@@ -68,51 +77,69 @@
                 <div class="material-symbols-outlined login-icon">person</div>
             </div>
         </nav>
-        <section style="display: flex; justify-content: space-around; border-bottom: 1px solid; width: 1260px; height: 400px;">
-            <article>
-                <div style="border: 1px solid; width: 500px; height: 300px;">사진</div>
-                <div>다른 사진</div>
+        <!--  -->
+        <section>
+            <!--  -->
+            <article class="page-top">
+                <div class="page-top-one">
+                    <div class="page-goods"></div>
+                </div>
+                <!-- <div class="page-top-two">다른 사진</div> -->
             </article>
-            <article style="width: 500px; border: 1px solid; padding-left: 10px;padding-right: 10px;"> 
-                <div style="margin-bottom: 10px;">
+            <!--  -->
+            <article class="page-bottom" style="">
+                <div class="page-box-one" style="">
                     <ul>
-                        <li>LG전자 LG그램 13세대16ZD90RU-GX56K SSD 256GB/16G/대화면 휴대용 가벼운노트북/4종사은품증정_</li>
-                        <li>별점</li>
+                        <li class="page-one-top">LG전자 LG그램 13세대16ZD90RU-GX56K SSD 256GB/16G/대화면 휴대용 가벼운노트북/4종사은품증정_</li>
+                        <li class="page-one-bottom" style="display: flex;">
+                            <div class="material-symbols-outlined">star</div>
+                            <div class="material-symbols-outlined">star</div>
+                            <div class="material-symbols-outlined">star</div>
+                            <div class="material-symbols-outlined">star</div>
+                            <div class="material-symbols-outlined">star</div>
+                        </li>
                     </ul>
                 </div>
-                <div style="margin-bottom: 10px;">
-                    <div>원가</div>
-                    <ul style="display: flex;">
-                        <li>할인가</li> 
-                        <li class="material-symbols-outlined">favorite</li>
-                        <li class="material-symbols-outlined">share</li>
+                <div class="page-box-two" style="">
+                    <div>1,590,000원</div>
+                    <ul style="">
+                        <li class="page-two-discount">1,467,300원</li>
+                        <li class="page-two-link" style="display: flex;">
+                            <div class="material-symbols-outlined">favorite</div>
+                            <div class="material-symbols-outlined">share</div>
+                        </li>
                     </ul>
                 </div>
-                <div style="display: flex; margin-bottom: 10px;">
-                    <div>배송비</div>
-                    <div>/배송 금액</div>
+                <div class="page-box-three" style="">
+                    <div style="margin-right: 0px; font-weight: bold; font-size: 18px;">배송비</div>
+                    <div style="font-size: 30px;" class="material-symbols-outlined">local_shipping</div>
+                    <div>3000원</div>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <input type="button" style="width: 150px; height: 60px; margin: 10px;" value="장바구니">
-                    <input type="button" style="width: 150px; height: 60px; margin: 10px;" value="구매하기">
+                <div class="page-box-four" style="">
+                    <input type="button" style="" value="장바구니">
+                    <input type="button" style="" value="구매하기">
                 </div>
             </article>
         </section>
-        <aside style="display: flex; justify-content: space-around; margin-top: 50px;  width: 1260px; border: 1px solid;">
-            <div style="border: 1px solid; width: 700px; height: 1000px;"></div>
-            <div style="border: 1px solid; width: 300px; height: 600px; text-align: center; justify-content: center;" >
-                <div style="border: 1px solid; height: 500px; width: 250px;">
+        <aside class="page-center">
+
+        </aside>
+        <aside
+            style="display: flex; justify-content: space-around; margin-top: 50px;  width: 1260px; border: 1px solid;">
+            <div class="thing-left" style=""></div>
+            <div class="thing-right" style="">
+                <div class="thing-box-onw" style="">
 
                 </div>
-                <div>
+                <div class="thing-box-two">
                     <input type="button" value="장바구니">
                 </div>
-                <div>
+                <div class="thing-box-three">
                     <input type="button" value="구매하기">
                 </div>
             </div>
         </aside>
-        <footer style="border: 1px solid; width: 1260px; height: 50px; margin-top: 20px;">
+        <footer style="">
 
         </footer>
     </div>
