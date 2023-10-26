@@ -226,22 +226,33 @@ section {
     justify-content: space-around;
     border-bottom: 1px solid;
     width: 1260px;
-    height: 400px;
+    height: 360px;
+    border-bottom: 1px solid ;
 }
 
-section>.page-top {}
+section>.page-top {
+    width: 700px;
+    height: 350px;
+    border-left: 1px solid ;
 
-section>.page-top>.page-top-one{
+    display: flex;
+    justify-content: center;
+}
+
+section>.page-top>.page-top-one {
     margin-top: 20px;
     width: 500px;
     height: 300px;
-}
-section>.page-top>.page-top-one>.page-goods {
+
 
 }
+
+section>.page-top>.page-top-one>.page-goods {}
+
 section>.page-top>.page-top-two {}
+
 /*  */
-.page-center{
+.page-center {
     border: 1px solid;
     width: 1260px;
     height: 100px;
@@ -252,21 +263,27 @@ section>.page-top>.page-top-two {}
 /*  */
 section>.page-bottom {
     width: 500px;
+    height: 350px;
     padding-left: 10px;
     padding-right: 10px;
+
+    border-right: 1px solid;
 
 }
 
 section>.page-bottom>.page-box-one {
     margin-bottom: 10px;
+    margin-top: 15px;
 
 }
-section>.page-bottom>.page-box-one>ul>.page-one-top{
+
+section>.page-bottom>.page-box-one>ul>.page-one-top {
     font-size: 19px;
     font-weight: bold;
 
 }
-section>.page-bottom>.page-box-one>ul>.page-one-bottom>div{
+
+section>.page-bottom>.page-box-one>ul>.page-one-bottom>div {
     font-size: 17px;
     margin-top: 5px;
 }
@@ -275,7 +292,8 @@ section>.page-bottom>.page-box-two {
     margin-bottom: 10px;
 
 }
-section>.page-bottom>.page-box-two>div{
+
+section>.page-bottom>.page-box-two>div {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -287,13 +305,14 @@ section>.page-bottom>.page-box-two>ul {
     justify-content: space-between;
 }
 
-section>.page-bottom>.page-box-two>ul>.page-two-discount{
+section>.page-bottom>.page-box-two>ul>.page-two-discount {
     margin-left: 5px;
     color: red;
     font-size: 20px;
     font-weight: bold;
 }
-section>.page-bottom>.page-box-two>ul>.page-two-link>div{
+
+section>.page-bottom>.page-box-two>ul>.page-two-link>div {
     font-size: 35px;
     width: 40px;
 }
@@ -302,7 +321,8 @@ section>.page-bottom>.page-box-three {
     margin-bottom: 10px;
     display: flex;
 }
-section>.page-bottom>.page-box-three>div{
+
+section>.page-bottom>.page-box-three>div {
     margin-right: 20px;
 }
 
@@ -319,36 +339,80 @@ section>.page-bottom>.page-box-four>input {
 }
 
 /*  */
-aside {}
-
-aside>.thing-left {
-    border: 1px solid;
-    width: 700px;
-    height: 1000px;
+.page-two {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 1260px;
 }
 
+aside>.thing>.thing-left {
+    width: 930px;
+    height: 21000px;
+    display: flex;
+    justify-content: center;
+}
+aside>.thing>.thing-center{
+    display: flex;
+    justify-content: center;
+}
+aside>.thing>.thing-center>input{
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: aqua;
+    font-size: 20px;
+    font-weight: bold;
+}
 aside>.thing-right {
     border: 1px solid;
     width: 300px;
     height: 600px;
-    text-align: center;
+}
+aside>.page-tow-box>.thing-right>.page-tow-box{
+    border: 1px solid;
+    width: 300px;
+    height: 600px;
+
+    position: fixed;
+    bottom: -100px; /* 숨김 상태에서 시작 */
+    transition: transform 0.5s;
+    transform: translateY(100px); /* 숨김 상태에서 시작 */
+}
+
+aside>.page-tow-box>.thing-right>.thing-box-onw {
+    height: 500px;
+    width: 300px;
+    display: flex;
     justify-content: center;
 }
-
-aside>.thing-right>.thing-box-onw {
+aside>.page-tow-box>.thing-right>.thing-box-onw>div{
     border: 1px solid;
-    height: 500px;
+    height: 46  0px;
     width: 250px;
-} 
-
-aside>.thing-right>.thing-box-two {
-
+    margin-top: 20px;
 }
 
-aside>.thing-right>.thing-box-three {
-
+aside>.page-tow-box>.thing-right>.thing-box-two {
+    display: flex;
+    justify-content: center;
+}
+aside>.page-tow-box>.thing-right>.thing-box-two>input{
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+    margin-bottom: 0px;
 }
 
+aside>.page-tow-box>.thing-right>.thing-box-three {
+    display: flex;
+    justify-content: center;
+}
+aside>.page-tow-box>.thing-right>.thing-box-three>input{
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+}
 footer {
     border: 1px solid;
     width: 1260px;
