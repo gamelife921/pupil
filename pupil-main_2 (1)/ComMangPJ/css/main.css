@@ -331,14 +331,25 @@ section>.main-top>.option-top>.option>.option-name>ul>li {
     margin: 10px;
 }
 
-section>.main-top>.option-top>.option>.option-box {
+section>.main-top>.option-top>.option>.option-name>ul>li>input{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+
+    border: none; /* 테두리 제거 */
+    background: none; /* 배경 제거 */
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+section>.main-top>.option-top>.option>.option-in>.option-box {
     display: flex;
     justify-content: center;
     text-align: center;
     width: 700px;
 }
 
-section>.main-top>.option-top>.option>.option-box>.op {
+section>.main-top>.option-top>.option>.option-in>.option-box>.op {
     width: 120px;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -348,7 +359,7 @@ section>.main-top>.option-top>.option>.option-box>.op {
 
 }
 
-section>.main-top>.option-top>.option>.option-box>.op>p {
+section>.main-top>.option-top>.option>.option-in>.option-box>.op>p {
     border-bottom: 1px solid;
     margin: 5px;
 }
